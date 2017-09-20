@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1231" it="0" lt="1231" ct="1015" ts="1505893026813" s="true" lb="HTTP请求-知乎登录" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2387" sby="307" ng="1" na="1"/>
+<httpSample t="1908" it="0" lt="1198" ct="0" ts="1505893028061" s="true" lb="HTTP请求-知乎获取【发现】栏目的内容" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="196753" sby="664" ng="1" na="1"/>
+<sample t="15" it="0" lt="0" ct="0" ts="1505893030005" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="4561" sby="0" ng="1" na="1"/>
+<sample t="5" it="0" lt="0" ct="0" ts="1505893030020" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1458" sby="0" ng="1" na="1"/>
+<sample t="3" it="0" lt="0" ct="0" ts="1505893030026" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2945" sby="0" ng="1" na="1"/>
+<sample t="7" it="0" lt="0" ct="0" ts="1505893030041" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15205" sby="0" ng="1" na="1"/>
+<sample t="3" it="0" lt="0" ct="0" ts="1505893030049" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2070" sby="0" ng="1" na="1"/>
+<sample t="3" it="0" lt="0" ct="0" ts="1505893030052" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3801" sby="0" ng="1" na="1"/>
+<sample t="9" it="0" lt="0" ct="0" ts="1505893030055" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15321" sby="0" ng="1" na="1"/>
+<sample t="7" it="0" lt="0" ct="0" ts="1505893030064" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15294" sby="0" ng="1" na="1"/>
+<sample t="2" it="0" lt="0" ct="0" ts="1505893030071" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="1930" sby="0" ng="1" na="1"/>
+<sample t="22" it="0" lt="0" ct="0" ts="1505893030073" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="45403" sby="0" ng="1" na="1"/>
+<sample t="3" it="0" lt="0" ct="0" ts="1505893030095" s="true" lb="BeanShell Sampler-遍历数组" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3266" sby="0" ng="1" na="1"/>
+<sample t="2" it="0" lt="0" ct="0" ts="1505893030098" s="true" lb="BeanShell Sampler-输出结果" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="111320" sby="0" ng="1" na="1"/>
+
+<sample t="24" it="0" lt="0" ct="0" ts="1505893031719" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="3" sby="0" ng="1" na="1"/>
+<sample t="1" it="0" lt="0" ct="0" ts="1505893031755" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="248" sby="0" ng="1" na="1"/>
+<sample t="1" it="0" lt="0" ct="0" ts="1505893031756" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2" sby="0" ng="1" na="1"/>
+
+<httpSample t="885" it="0" lt="885" ct="844" ts="1505893033277" s="true" lb="百度测试" rc="200" rm="OK" tn="百度  1-1" dt="text" by="2843" sby="182" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>断言持续时间</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1505893034177" s="true" lb="百度测试2" rc="200" rm="OK" tn="百度  1-1" dt="text" by="2843" sby="203" ng="1" na="1"/>
+<httpSample t="39" it="0" lt="39" ct="0" ts="1505893034225" s="true" lb="百度测试3" rc="200" rm="OK" tn="百度  1-1" dt="text" by="2843" sby="203" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+<sample t="7" it="0" lt="0" ct="0" ts="1505893035889" s="true" lb="BeanShell Sampler-测试自定义函数" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="9" sby="0" ng="1" na="1"/>
+
+<sample t="21110" it="0" lt="0" ct="21110" ts="1505893037541" s="false" lb="JDBC Request" rc="null 0" rm="java.sql.SQLException: Cannot create PoolableConnectionFactory (Communications link failure&#xa;&#xa;The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)" tn="5、Jmeter参数化之从数据库读取数据 1-1" dt="text" by="199" sby="0" ng="1" na="1"/>
+<sample t="26" it="0" lt="0" ct="0" ts="1505893058660" s="true" lb="BeanShell Sampler" rc="200" rm="OK" tn="5、Jmeter参数化之从数据库读取数据 1-1" dt="text" by="0" sby="0" ng="1" na="1"/>
+
+<sample t="670" it="0" lt="653" ct="616" ts="1505893060534" s="true" lb="JDBC Request" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="2349" sby="0" ng="1" na="1"/>
+
+
+<httpSample t="439" it="0" lt="221" ct="109" ts="1505893064357" s="true" lb="cnblog首页" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="57264" sby="197" ng="1" na="1"/>
+<httpSample t="98" it="0" lt="74" ct="0" ts="1505893064821" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15683" sby="212" ng="1" na="1"/>
+<httpSample t="107" it="0" lt="83" ct="0" ts="1505893064922" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15683" sby="212" ng="1" na="1"/>
+<httpSample t="128" it="0" lt="98" ct="0" ts="1505893065031" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16271" sby="212" ng="1" na="1"/>
+<httpSample t="128" it="0" lt="91" ct="0" ts="1505893065161" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16271" sby="212" ng="1" na="1"/>
+<httpSample t="119" it="0" lt="84" ct="0" ts="1505893065290" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="17070" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="68" ct="0" ts="1505893065410" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="17070" sby="212" ng="1" na="1"/>
+<httpSample t="109" it="0" lt="86" ct="0" ts="1505893065510" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14321" sby="212" ng="1" na="1"/>
+<httpSample t="87" it="0" lt="62" ct="0" ts="1505893065622" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14321" sby="212" ng="1" na="1"/>
+<httpSample t="209" it="0" lt="67" ct="0" ts="1505893065710" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="53627" sby="212" ng="1" na="1"/>
+<httpSample t="229" it="0" lt="85" ct="0" ts="1505893065920" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="53627" sby="212" ng="1" na="1"/>
+<httpSample t="79" it="0" lt="63" ct="0" ts="1505893066150" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="10450" sby="212" ng="1" na="1"/>
+<httpSample t="88" it="0" lt="76" ct="0" ts="1505893066231" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="10450" sby="212" ng="1" na="1"/>
+<httpSample t="119" it="0" lt="85" ct="0" ts="1505893066320" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="17621" sby="212" ng="1" na="1"/>
+<httpSample t="188" it="0" lt="125" ct="58" ts="1505893066440" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="17621" sby="212" ng="1" na="1"/>
+<httpSample t="90" it="0" lt="86" ct="0" ts="1505893066629" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12059" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="83" ct="0" ts="1505893066720" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12059" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="88" ct="0" ts="1505893066820" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12280" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="84" ct="0" ts="1505893066920" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12280" sby="212" ng="1" na="1"/>
+<httpSample t="89" it="0" lt="73" ct="0" ts="1505893067020" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11418" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="85" ct="0" ts="1505893067110" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11418" sby="212" ng="1" na="1"/>
+<httpSample t="79" it="0" lt="66" ct="0" ts="1505893067210" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11896" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="88" ct="0" ts="1505893067290" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11896" sby="212" ng="1" na="1"/>
+<httpSample t="100" it="0" lt="83" ct="0" ts="1505893067390" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12700" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="84" ct="0" ts="1505893067490" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12700" sby="212" ng="1" na="1"/>
+<httpSample t="79" it="0" lt="71" ct="0" ts="1505893067590" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12557" sby="212" ng="1" na="1"/>
+<httpSample t="89" it="0" lt="78" ct="0" ts="1505893067670" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12557" sby="212" ng="1" na="1"/>
+<httpSample t="106" it="0" lt="84" ct="0" ts="1505893067763" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14473" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="75" ct="0" ts="1505893067870" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14473" sby="212" ng="1" na="1"/>
+<httpSample t="119" it="0" lt="85" ct="0" ts="1505893067970" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="17392" sby="212" ng="1" na="1"/>
+<httpSample t="109" it="0" lt="77" ct="0" ts="1505893068090" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="17392" sby="212" ng="1" na="1"/>
+<httpSample t="179" it="0" lt="67" ct="0" ts="1505893068200" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="42283" sby="212" ng="1" na="1"/>
+<httpSample t="180" it="0" lt="80" ct="0" ts="1505893068380" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="42283" sby="212" ng="1" na="1"/>
+<httpSample t="149" it="0" lt="134" ct="60" ts="1505893068561" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12311" sby="212" ng="1" na="1"/>
+<httpSample t="89" it="0" lt="76" ct="0" ts="1505893068710" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12311" sby="212" ng="1" na="1"/>
+<httpSample t="109" it="0" lt="80" ct="0" ts="1505893068800" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15043" sby="212" ng="1" na="1"/>
+<httpSample t="123" it="0" lt="86" ct="0" ts="1505893068911" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15043" sby="212" ng="1" na="1"/>
+<httpSample t="91" it="0" lt="69" ct="0" ts="1505893069038" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15043" sby="212" ng="1" na="1"/>
+<httpSample t="100" it="0" lt="78" ct="0" ts="1505893069130" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15043" sby="212" ng="1" na="1"/>
+<httpSample t="108" it="0" lt="86" ct="0" ts="1505893069231" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15021" sby="212" ng="1" na="1"/>
+<httpSample t="111" it="0" lt="86" ct="0" ts="1505893069340" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15021" sby="212" ng="1" na="1"/>
+<httpSample t="87" it="0" lt="73" ct="0" ts="1505893069453" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12429" sby="212" ng="1" na="1"/>
+<httpSample t="89" it="0" lt="75" ct="0" ts="1505893069540" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12429" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="74" ct="0" ts="1505893069630" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="13694" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="79" ct="0" ts="1505893069730" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="13694" sby="212" ng="1" na="1"/>
+<httpSample t="119" it="0" lt="96" ct="0" ts="1505893069830" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15408" sby="212" ng="1" na="1"/>
+<httpSample t="260" it="0" lt="231" ct="0" ts="1505893069950" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="15408" sby="212" ng="1" na="1"/>
+<httpSample t="150" it="0" lt="92" ct="0" ts="1505893070211" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="20949" sby="212" ng="1" na="1"/>
+<httpSample t="123" it="0" lt="74" ct="0" ts="1505893070362" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="20949" sby="212" ng="1" na="1"/>
+<httpSample t="93" it="0" lt="71" ct="0" ts="1505893070486" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14369" sby="212" ng="1" na="1"/>
+<httpSample t="149" it="0" lt="127" ct="51" ts="1505893070580" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14369" sby="212" ng="1" na="1"/>
+<httpSample t="80" it="0" lt="69" ct="0" ts="1505893070730" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12165" sby="212" ng="1" na="1"/>
+<httpSample t="80" it="0" lt="67" ct="0" ts="1505893070810" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12165" sby="212" ng="1" na="1"/>
+<httpSample t="139" it="0" lt="77" ct="0" ts="1505893070890" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16623" sby="212" ng="1" na="1"/>
+<httpSample t="140" it="0" lt="74" ct="0" ts="1505893071030" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16623" sby="212" ng="1" na="1"/>
+<httpSample t="229" it="0" lt="89" ct="0" ts="1505893071171" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="39507" sby="212" ng="1" na="1"/>
+<httpSample t="218" it="0" lt="77" ct="0" ts="1505893071401" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="39507" sby="212" ng="1" na="1"/>
+<httpSample t="119" it="0" lt="81" ct="0" ts="1505893071620" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16609" sby="212" ng="1" na="1"/>
+<httpSample t="119" it="0" lt="85" ct="0" ts="1505893071740" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16609" sby="212" ng="1" na="1"/>
+<httpSample t="170" it="0" lt="88" ct="0" ts="1505893071860" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="30389" sby="212" ng="1" na="1"/>
+<httpSample t="170" it="0" lt="80" ct="0" ts="1505893072030" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="30389" sby="212" ng="1" na="1"/>
+<httpSample t="100" it="0" lt="85" ct="0" ts="1505893072200" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12129" sby="212" ng="1" na="1"/>
+<httpSample t="88" it="0" lt="77" ct="0" ts="1505893072302" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="12129" sby="212" ng="1" na="1"/>
+<httpSample t="89" it="0" lt="72" ct="0" ts="1505893072390" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="10119" sby="212" ng="1" na="1"/>
+<httpSample t="159" it="0" lt="149" ct="0" ts="1505893072480" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="10119" sby="212" ng="1" na="1"/>
+<httpSample t="130" it="0" lt="112" ct="52" ts="1505893072640" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11598" sby="212" ng="1" na="1"/>
+<httpSample t="90" it="0" lt="75" ct="0" ts="1505893072770" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11598" sby="212" ng="1" na="1"/>
+<httpSample t="90" it="0" lt="90" ct="0" ts="1505893072860" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="8748" sby="212" ng="1" na="1"/>
+<httpSample t="89" it="0" lt="73" ct="0" ts="1505893072950" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="8748" sby="212" ng="1" na="1"/>
+<httpSample t="90" it="0" lt="74" ct="0" ts="1505893073040" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11375" sby="212" ng="1" na="1"/>
+<httpSample t="100" it="0" lt="84" ct="0" ts="1505893073130" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="11375" sby="212" ng="1" na="1"/>
+<httpSample t="89" it="0" lt="59" ct="0" ts="1505893073231" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14823" sby="212" ng="1" na="1"/>
+<httpSample t="110" it="0" lt="85" ct="0" ts="1505893073320" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="14823" sby="212" ng="1" na="1"/>
+<httpSample t="90" it="0" lt="78" ct="0" ts="1505893073430" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="13084" sby="212" ng="1" na="1"/>
+<httpSample t="90" it="0" lt="78" ct="0" ts="1505893073520" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="13084" sby="212" ng="1" na="1"/>
+<httpSample t="150" it="0" lt="88" ct="0" ts="1505893073610" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="25935" sby="212" ng="1" na="1"/>
+<httpSample t="149" it="0" lt="90" ct="0" ts="1505893073760" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="25935" sby="212" ng="1" na="1"/>
+<httpSample t="130" it="0" lt="119" ct="0" ts="1505893073910" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="10723" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="86" ct="0" ts="1505893074041" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="10723" sby="212" ng="1" na="1"/>
+<httpSample t="99" it="0" lt="64" ct="0" ts="1505893074140" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16060" sby="212" ng="1" na="1"/>
+<httpSample t="110" it="0" lt="90" ct="0" ts="1505893074240" s="true" lb="HTTP请求" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="16060" sby="212" ng="1" na="1"/>
+<sample t="3" it="0" lt="0" ct="0" ts="1505893074354" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="线程组 1-1" dt="text" by="9928" sby="0" ng="1" na="1"/>
+
+</testResults>

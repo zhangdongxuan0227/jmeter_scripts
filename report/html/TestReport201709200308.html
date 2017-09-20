@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>接口测试结果</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+				    color: #ffffff;
+					font-weight: bold;
+					text-align:center;
+					background:#2674a6;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+				.LongTime {
+					font-weight:bold; color:#ff9900;
+				}
+				
+	
+				img
+				{
+				  border-width: 0px;
+				}
+				
+				.expand_link
+				{
+				   position=absolute;
+				   right: 0px;
+				   width: 27px;
+				   top: 1px;
+				   height: 27px;
+				}
+				
+				.page_details
+				{
+				   display: none;
+				}
+                                
+                .page_details_expanded
+                {
+                    display: block;
+                    display/* hide this definition from  IE5/6 */: table-row;
+                }
+
+
+			</style>
+<script language="JavaScript">
+	                function expand(details_id)
+				   	{
+				      
+				    	document.getElementById(details_id).className = "page_details_expanded";
+				   	}
+				   
+				   	function collapse(details_id)
+				   	{
+				      
+				      	document.getElementById(details_id).className = "page_details";
+				   	}
+				   
+				   	function change(details_id)
+				   	{
+				   		var _dataType=document.getElementById(details_id+"_image").getAttribute('data-type');
+				      	if(_dataType=='expand')
+				      	{
+				         	<!-- document.getElementById(details_id+"_image").src = "collapse.png";  -->
+				         	document.getElementById(details_id+"_image").src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAARSURBVAjXY2DABuR/gBA2AAAzpwIvNQARCgAAAABJRU5ErkJggg==";
+				         	expand(details_id);
+				         	document.getElementById(details_id+"_image").setAttribute('data-type','collapse');
+				      	}
+				      	else
+				      	{
+				        	<!-- document.getElementById(details_id+"_image").src = "expand.png"; -->
+				        	document.getElementById(details_id+"_image").src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC";
+				         	collapse(details_id);
+				         	document.getElementById(details_id+"_image").setAttribute('data-type','expand');
+				      	} 
+	                }
+				</script>
+</head>
+<body>
+<h1>接口测试结果</h1>
+<table width="100%">
+<tr>
+<td align="left">Date report: 2017/09/20 15:09</td><td align="center">Host: </td><td align="right"><a href="./TestLog.html">测试日志</a></td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th># Samples</th><th>Success</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th>90% Line</th><th>QPS</th>
+</tr>
+<tr valign="top">
+<td align="center">105</td><td align="center">104</td><td style="font-weight:bold" align="center"><font color="red">1</font></td><td align="center">99.05%</td><td align="center">399 ms</td><td align="center">1 ms</td><td align="center">21174 ms</td><td align="center">209 ms</td><td align="center">2.506 /s</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Pages</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th>URL</th><th># Samples</th><th>Success</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th>90% Line</th><th>QPS</th><th></th>
+</tr>
+<tr valign="top" class="Failure">
+<td align="center"><a href="#JDBC Request">JDBC Request</a></td><td align="center">2</td><td align="center">1</td><td align="center">1</td><td align="center">50.00%</td><td align="center">10980 ms</td><td align="center">786 ms</td><td align="center">21174 ms</td><td align="center">786 ms</td><td align="center">0.091 /s</td><td align="center"><a href="javascript:change('page_details_1')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_1_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_1">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "JDBC Request"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">5、Jmeter参数化之从数据库读取数据 1-1</td><td align="center">1</td><td align="center">21174</td><td align="center">199</td><td align="center">false</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">2</td><td align="center">786</td><td align="center">2349</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="LongTime">
+<td align="center">HTTP请求-知乎获取【发现】栏目的内容</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">5276 ms</td><td align="center">5276 ms</td><td align="center">5276 ms</td><td align="center">5276 ms</td><td align="center">0.190 /s</td><td align="center"><a href="javascript:change('page_details_2')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_2_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_2">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP请求-知乎获取【发现】栏目的内容"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">5276</td><td align="center">177856</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="LongTime">
+<td align="center">HTTP请求-知乎登录</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">2151 ms</td><td align="center">2151 ms</td><td align="center">2151 ms</td><td align="center">2151 ms</td><td align="center">0.465 /s</td><td align="center"><a href="javascript:change('page_details_3')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_3_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_3">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP请求-知乎登录"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">2151</td><td align="center">2389</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">百度测试</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">888 ms</td><td align="center">888 ms</td><td align="center">888 ms</td><td align="center">888 ms</td><td align="center">1.126 /s</td><td align="center"><a href="javascript:change('page_details_4')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_4_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_4">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "百度测试"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">百度  1-1</td><td align="center">1</td><td align="center">888</td><td align="center">2843</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">cnblog首页</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">680 ms</td><td align="center">680 ms</td><td align="center">680 ms</td><td align="center">680 ms</td><td align="center">1.471 /s</td><td align="center"><a href="javascript:change('page_details_5')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_5_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_5">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "cnblog首页"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">680</td><td align="center">57264</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">HTTP请求</td><td align="center">80</td><td align="center">80</td><td align="center">0</td><td align="center">100.00%</td><td align="center">134 ms</td><td align="center">78 ms</td><td align="center">370 ms</td><td align="center">190 ms</td><td align="center">7.463 /s</td><td align="center"><a href="javascript:change('page_details_6')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_6_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_6">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "HTTP请求"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">135</td><td align="center">15683</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">2</td><td align="center">159</td><td align="center">15683</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">3</td><td align="center">139</td><td align="center">16271</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">4</td><td align="center">118</td><td align="center">16271</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">5</td><td align="center">128</td><td align="center">17070</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">6</td><td align="center">130</td><td align="center">17070</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">7</td><td align="center">110</td><td align="center">14321</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">8</td><td align="center">98</td><td align="center">14321</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">9</td><td align="center">209</td><td align="center">53627</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">10</td><td align="center">370</td><td align="center">53627</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">11</td><td align="center">179</td><td align="center">10450</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">12</td><td align="center">110</td><td align="center">10450</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">13</td><td align="center">133</td><td align="center">17621</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">14</td><td align="center">153</td><td align="center">17621</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">15</td><td align="center">99</td><td align="center">12059</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">16</td><td align="center">99</td><td align="center">12059</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">17</td><td align="center">110</td><td align="center">12280</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">18</td><td align="center">101</td><td align="center">12280</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">19</td><td align="center">118</td><td align="center">11418</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">20</td><td align="center">108</td><td align="center">11418</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">21</td><td align="center">100</td><td align="center">11896</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">22</td><td align="center">120</td><td align="center">11896</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">23</td><td align="center">140</td><td align="center">12700</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">24</td><td align="center">110</td><td align="center">12700</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">25</td><td align="center">100</td><td align="center">12557</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">26</td><td align="center">119</td><td align="center">12557</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">27</td><td align="center">130</td><td align="center">14473</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">28</td><td align="center">170</td><td align="center">14473</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">29</td><td align="center">149</td><td align="center">17392</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">30</td><td align="center">120</td><td align="center">17392</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">31</td><td align="center">209</td><td align="center">42283</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">32</td><td align="center">279</td><td align="center">42283</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">33</td><td align="center">129</td><td align="center">12311</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">34</td><td align="center">209</td><td align="center">12311</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">35</td><td align="center">138</td><td align="center">15043</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">36</td><td align="center">130</td><td align="center">15043</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">37</td><td align="center">118</td><td align="center">15043</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">38</td><td align="center">121</td><td align="center">15043</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">39</td><td align="center">108</td><td align="center">15021</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">40</td><td align="center">108</td><td align="center">15021</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">41</td><td align="center">159</td><td align="center">12429</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">42</td><td align="center">99</td><td align="center">12429</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">43</td><td align="center">119</td><td align="center">13694</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">44</td><td align="center">99</td><td align="center">13694</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">45</td><td align="center">100</td><td align="center">15408</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">46</td><td align="center">100</td><td align="center">15408</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">47</td><td align="center">140</td><td align="center">20949</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">48</td><td align="center">120</td><td align="center">20949</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">49</td><td align="center">90</td><td align="center">14369</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">50</td><td align="center">90</td><td align="center">14369</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">51</td><td align="center">79</td><td align="center">12165</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">52</td><td align="center">186</td><td align="center">12165</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">53</td><td align="center">120</td><td align="center">16623</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">54</td><td align="center">100</td><td align="center">16623</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">55</td><td align="center">189</td><td align="center">39507</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">56</td><td align="center">190</td><td align="center">39507</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">57</td><td align="center">100</td><td align="center">16609</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">58</td><td align="center">159</td><td align="center">16609</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">59</td><td align="center">190</td><td align="center">30389</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">60</td><td align="center">190</td><td align="center">30389</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">61</td><td align="center">119</td><td align="center">12129</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">62</td><td align="center">99</td><td align="center">12129</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">63</td><td align="center">109</td><td align="center">10119</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">64</td><td align="center">99</td><td align="center">10119</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">65</td><td align="center">99</td><td align="center">11598</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">66</td><td align="center">141</td><td align="center">11598</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">67</td><td align="center">78</td><td align="center">8748</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">68</td><td align="center">90</td><td align="center">8748</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">69</td><td align="center">220</td><td align="center">11375</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">70</td><td align="center">109</td><td align="center">11375</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">71</td><td align="center">130</td><td align="center">14823</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">72</td><td align="center">130</td><td align="center">14823</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">73</td><td align="center">89</td><td align="center">13084</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">74</td><td align="center">160</td><td align="center">13084</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">75</td><td align="center">179</td><td align="center">25935</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">76</td><td align="center">169</td><td align="center">25935</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">77</td><td align="center">119</td><td align="center">10723</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">78</td><td align="center">100</td><td align="center">10723</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">79</td><td align="center">119</td><td align="center">16060</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">80</td><td align="center">129</td><td align="center">16060</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">百度测试3</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">37 ms</td><td align="center">37 ms</td><td align="center">37 ms</td><td align="center">37 ms</td><td align="center">27.027 /s</td><td align="center"><a href="javascript:change('page_details_7')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_7_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_7">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "百度测试3"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">百度  1-1</td><td align="center">1</td><td align="center">37</td><td align="center">2843</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">百度测试2</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">25 ms</td><td align="center">25 ms</td><td align="center">25 ms</td><td align="center">25 ms</td><td align="center">40.000 /s</td><td align="center"><a href="javascript:change('page_details_8')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_8_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_8">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "百度测试2"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">百度  1-1</td><td align="center">1</td><td align="center">25</td><td align="center">2843</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">BeanShell Sampler</td><td align="center">3</td><td align="center">3</td><td align="center">0</td><td align="center">100.00%</td><td align="center">15 ms</td><td align="center">1 ms</td><td align="center">24 ms</td><td align="center">21 ms</td><td align="center">65.217 /s</td><td align="center"><a href="javascript:change('page_details_9')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_9_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_9">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "BeanShell Sampler"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">24</td><td align="center">3</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">2</td><td align="center">1</td><td align="center">2</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">5、Jmeter参数化之从数据库读取数据 1-1</td><td align="center">3</td><td align="center">21</td><td align="center">0</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">Debug Sampler</td><td align="center">2</td><td align="center">2</td><td align="center">0</td><td align="center">100.00%</td><td align="center">10 ms</td><td align="center">2 ms</td><td align="center">18 ms</td><td align="center">2 ms</td><td align="center">100.000 /s</td><td align="center"><a href="javascript:change('page_details_10')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_10_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_10">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "Debug Sampler"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">18</td><td align="center">248</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">2</td><td align="center">2</td><td align="center">9928</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">BeanShell Sampler-遍历数组</td><td align="center">10</td><td align="center">10</td><td align="center">0</td><td align="center">100.00%</td><td align="center">8 ms</td><td align="center">2 ms</td><td align="center">31 ms</td><td align="center">19 ms</td><td align="center">117.647 /s</td><td align="center"><a href="javascript:change('page_details_11')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_11_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_11">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "BeanShell Sampler-遍历数组"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">31</td><td align="center">1458</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">2</td><td align="center">2</td><td align="center">2945</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">3</td><td align="center">6</td><td align="center">3801</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">4</td><td align="center">2</td><td align="center">2070</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">5</td><td align="center">6</td><td align="center">4305</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">6</td><td align="center">10</td><td align="center">15321</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">7</td><td align="center">4</td><td align="center">15294</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">8</td><td align="center">2</td><td align="center">1930</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">9</td><td align="center">19</td><td align="center">45403</td><td align="center">true</td>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">10</td><td align="center">3</td><td align="center">3266</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">BeanShell Sampler-测试自定义函数</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">5 ms</td><td align="center">5 ms</td><td align="center">5 ms</td><td align="center">5 ms</td><td align="center">200.000 /s</td><td align="center"><a href="javascript:change('page_details_12')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_12_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_12">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "BeanShell Sampler-测试自定义函数"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">5</td><td align="center">9</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top">
+<td align="center">BeanShell Sampler-输出结果</td><td align="center">1</td><td align="center">1</td><td align="center">0</td><td align="center">100.00%</td><td align="center">2 ms</td><td align="center">2 ms</td><td align="center">2 ms</td><td align="center">2 ms</td><td align="center">500.000 /s</td><td align="center"><a href="javascript:change('page_details_13')"><img alt="expand/collapse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAGUExURSZ0pv///xB+eSAAAAAWSURBVAjXY2CAAcYGBJL/AULIIjAAAJJrBjcL30J5AAAAAElFTkSuQmCC" data-type="expand" id="page_details_13_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_13">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "BeanShell Sampler-输出结果"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td align="center">线程组 1-1</td><td align="center">1</td><td align="center">2</td><td align="center">95853</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<hr align="center" width="95%" size="1">
+<h2>Failure Detail</h2>
+<h3>JDBC Request<a name="JDBC Request"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th align="center">Response</th><th align="center">Failure Message</th><th align="left">Response Data</th>
+</tr>
+<tr>
+<td>null 0 - java.sql.SQLException: Cannot create PoolableConnectionFactory (Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.)</td><td></td><td></td>
+</tr>
+</table>
+</body>
+</html>
