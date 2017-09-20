@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="865" it="0" lt="864" ct="821" ts="1504849816403" s="true" lb="百度测试" rc="200" rm="OK" tn="百度  1-1" dt="text" by="2843" sby="182" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>断言持续时间</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="31" it="0" lt="31" ct="0" ts="1504849817281" s="true" lb="百度测试2" rc="200" rm="OK" tn="百度  1-1" dt="text" by="2843" sby="203" ng="1" na="1"/>
+<httpSample t="37" it="0" lt="37" ct="0" ts="1504849817315" s="true" lb="百度测试3" rc="200" rm="OK" tn="百度  1-1" dt="text" by="2843" sby="203" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+
+</testResults>
